@@ -1,0 +1,9 @@
+/home/primaelq/Development/Projects/Git/C#/Vocalyz/Vocalyz/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/primaelq/Development/Projects/Git/C#/Vocalyz/Vocalyz/obj/Debug/Vocalyz.dll
+/home/primaelq/Development/Projects/Git/C#/Vocalyz/Vocalyz/obj/Debug/Vocalyz.pdb
+/home/primaelq/Development/Projects/Git/C#/Vocalyz/Vocalyz/bin/Debug/NAudio.dll
+/home/primaelq/Development/Projects/Git/C#/Vocalyz/Vocalyz/bin/Debug/NAudio.WindowsMediaFormat.dll
+/home/primaelq/Development/Projects/Git/C#/Vocalyz/Vocalyz/bin/Debug/Vocalyz.dll.mdb
+/home/primaelq/Development/Projects/Git/C#/Vocalyz/Vocalyz/bin/Debug/Vocalyz.pdb
+/home/primaelq/Development/Projects/Git/C#/Vocalyz/Vocalyz/bin/Debug/Vocalyz.dll
+/home/primaelq/Development/Projects/Git/C#/Vocalyz/Vocalyz/obj/Debug/Vocalyz.dll.mdb

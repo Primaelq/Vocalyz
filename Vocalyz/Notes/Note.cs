@@ -8,34 +8,42 @@ namespace Vocalyz.Notes
 {
     public class Note
     {
-        /// <summary>
-        /// Vitesse du son , en mètres par secondes
-        /// </summary>
-        public const int SOUND_SPEED = 345; 
+		//public const int SOUND_SPEED = 345; // Speed of sound (m/s) ------------> Moved to NotesManager as it's the same value for every notes.
 
-        public string SymbolUS { get; set; }
+        public string SymbolUS { get; private set; }
 
-        public string SymbolFR { get; set; }
-        /// <summary>
-        /// Frequence de la note, en hertz
-        /// </summary>
-        public double Frequency { get; set; }
-        /// <summary>
-        /// Longueur d'onde de la note en cm
-        /// </summary>
-        public double WaveLenght { get; set; }
-        /// <summary>
-        /// Octave de la note
-        /// </summary>
-        public short Octave { get; set; }
+        public string SymbolFR { get; private set; }
 
-        public Note(string symbolus,string symbolfr,short octave,double frequency,double wavelenght)
+		public double RefFrequency { get; private set; } // Note frequency (Hertz)
+
+		public double RefWaveLenght { get; private set; } // Note wavelenght (cm)
+
+        public Note(string symbolus,string symbolfr, double frequency,double wavelenght)
         {
             this.SymbolUS = symbolus;
             this.SymbolFR = symbolfr;
-            this.Octave = octave;
-            this.Frequency = frequency;
-            this.WaveLenght = wavelenght;
+            this.RefFrequency = frequency;
+            this.RefWaveLenght = wavelenght;
         }
+
+		public double GetOctaveFrequency(int octave)
+		{
+			if (octave > 9)
+			{
+				return 1; // Octave not in audible range.
+			}
+
+			return (RefFrequency * Math.Pow (2, octave));
+		}
+
+		public double GetOctaveWavelenght(int octave)
+		{
+			if (octave > 9)
+			{
+				return 1; // Octave not in audible range.
+			}
+
+			return (RefWaveLenght / Math.Pow (2, octave));
+		}
     }
 }

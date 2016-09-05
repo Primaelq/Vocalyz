@@ -59,13 +59,13 @@ namespace FlowView.Audio.FrequencyProvider
         }
         static bool Guitar(Note detectedPitch,int masterFrequency,int[] mastersFrequency)
         {
-            if (DetectFromPitchAndMaster(detectedPitch.Frequency, mastersFrequency, 311, 940))
+            if (DetectFromPitchAndMaster(detectedPitch.RefFrequency, mastersFrequency, 311, 940))
                 return true;
-            if (DetectFromPitchAndMaster(detectedPitch.Frequency, mastersFrequency, 312, 940))
+			if (DetectFromPitchAndMaster(detectedPitch.RefFrequency, mastersFrequency, 312, 940))
                 return true;
-            if (DetectFromPitchAndMaster(detectedPitch.Frequency, mastersFrequency, 311, 605))
+			if (DetectFromPitchAndMaster(detectedPitch.RefFrequency, mastersFrequency, 311, 605))
                 return true;
-            if (DetectFromPitchAndMaster(detectedPitch.Frequency, mastersFrequency, 156, 236))
+			if (DetectFromPitchAndMaster(detectedPitch.RefFrequency, mastersFrequency, 156, 236))
                 return true;
             return false;
         }

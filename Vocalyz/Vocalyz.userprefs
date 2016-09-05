@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Notes/NotesManager.cs">
+    <Files>
+      <File FileName="Notes/Note.cs" Line="43" Column="46" />
+      <File FileName="Notes/NotesManager.cs" Line="27" Column="56" />
+      <File FileName="VocalyzAnalyser.cs" Line="22" Column="55" />
+      <File FileName="FrequencyProvider/FrequencyData.cs" Line="1" Column="1" />
+      <File FileName="FrequencyProvider/FrequencyAnalyser.cs" Line="1" Column="1" />
+      <File FileName="Audio/AudioFrame.cs" Line="1" Column="1" />
+      <File FileName="FrequencyProvider/InstrumentDetector.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

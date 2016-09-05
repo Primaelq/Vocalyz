@@ -8,3 +8,8 @@ Example:
 
 ![alt tag](http://puu.sh/njRAb/fb0eb733b4.png)
 
+
+Fork from Skinz3 (Github: https://github.com/Skinz3).
+
+Just trying to bring some improvements.
+

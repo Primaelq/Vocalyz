@@ -32,33 +32,28 @@ namespace Vocalyz
 
         void Viewer_OnDataArrived(FrequencyData[] frequencies)
         {
-  
-        
+            m_Playing_Notes.Clear();
+
+            FundamentalFrequency = frequencies.First();
+            m_Playing_Notes.Add(NotesManager.GetNoteByFrequency(FundamentalFrequency.Frequency));
+            if (m_Playing_Notes[0] != null)
+                Console.WriteLine(m_Playing_Notes[0].SymbolUS);
 
 
-                m_Playing_Notes.Clear();
-
-                FundamentalFrequency = frequencies.First();
-                m_Playing_Notes.Add(NotesManager.GetNoteByFrequency(FundamentalFrequency.Frequency));
-                if (m_Playing_Notes[0] != null)
-                    Console.WriteLine(m_Playing_Notes[0].SymbolUS);
-
-
-                if (RecordUpdated != null)
-                    RecordUpdated(frequencies);
-                Console.WriteLine(FundamentalFrequency.Frequency);
-            
-         
+            if (RecordUpdated != null)
+                RecordUpdated(frequencies);
+            Console.WriteLine(FundamentalFrequency.Frequency);
         }
+
         public void Start()
         {
             Viewer.StartAnalysis(0);
         }
+
         public void Stop()
         {
             Viewer.StopAnalysis();
         }
-
 
     }
 }
